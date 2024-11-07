@@ -1,7 +1,11 @@
 #!/bin/bash
 
 ## Default to download OpenVPN 2.16.12
-mkdir app && \
+if [[ ! -d app ]]
+then
+	mkdir app
+fi
+
 	cd app && \
 	curl -OL https://github.com/OpenVPN/openvpn/releases/download/v2.6.12/openvpn-2.6.12.tar.gz && \
 	curl -OL https://github.com/OpenVPN/easy-rsa/releases/download/v3.2.1/EasyRSA-3.2.1.tgz && \
