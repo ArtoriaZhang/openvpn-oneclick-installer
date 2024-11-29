@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Default to download OpenVPN 2.16.12
+## Default to download OpenVPN 2.6.12
 if [[ ! -d app ]]
 then
 	mkdir app
