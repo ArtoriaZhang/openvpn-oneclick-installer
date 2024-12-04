@@ -15,5 +15,5 @@ to test the ***openvpn*** is alright.
 :::To be continued
 
 
-## Docker container
+## OpenVPN Docker image
 See [docker](docker/README.md)
