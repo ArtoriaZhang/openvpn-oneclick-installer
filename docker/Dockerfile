@@ -1,4 +1,4 @@
-from alpine:3.20 as build
+from alpine:3.22 as build
 
 arg openvpn_file=openvpn-2.6.12.tar.gz
 workdir /opt
@@ -14,7 +14,7 @@ run tar -xzf $openvpn_file &&\
     make install
 
 
-from alpine:3.20
+from alpine:3.22
 
 workdir /etc/openvpn
 
